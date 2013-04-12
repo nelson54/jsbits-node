@@ -1,0 +1,450 @@
+@base: #018f46;
+
+html {
+  border-top: 7px solid @base;
+  background-image:url("images/subtle_freckles.png");
+  padding-top:10px;
+  overflow-y:scroll;
+}
+
+html, body {
+  font-family:georgia,garamond,serif;
+  font-size:25pt;
+  text-shadow: 1px 1px 0px #ccc;
+  color:#333;
+}
+
+header {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+a {
+  color:@base;
+  text-decoration:none;
+}
+
+p {font-size:.6em;}
+
+div#container {
+  width:955px;
+  margin: 10px auto;
+}
+
+h1 {
+  font-family: "museo-slab",serif;
+  font-weight:500;
+  font-size: 1.3em;
+  margin-bottom:25px;
+}
+
+h1 span.fn a {
+  color:@base;
+  text-decoration:none;
+}
+
+h1 span.tagline {
+
+}
+
+h1 a {
+  color:#333;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "museo-slab",serif;
+  font-weight:500;
+  font-size:1em;
+  margin-top:0px;
+  padding-top:0px;
+  margin-bottom:15px;
+  padding-bottom:5px;
+  border-bottom:2px solid @base;
+}
+
+h3 {
+  font-family: "museo-slab",serif;
+  font-weight:500;
+  font-size:1em;
+  margin-top:0px;
+  padding-top:0px;
+  margin-bottom:0px;
+  padding-bottom:0px;
+  border-bottom:2px solid @base;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+  margin-top:0px;
+  font-size:.7em;
+}
+
+ul li {
+  margin-bottom:10px;
+  margin-right:10px;
+}
+
+#code-pane {
+  padding:30px;
+  padding-bottom: 1px;
+  margin-bottom:25px;
+  background-color:#e1e1e1;
+  background-color:rgba(0,0,0,.05);
+  clear:left;
+  position:relative;
+  margin-right: 10px;
+}
+
+.code-header {
+  font-size: 10pt;
+  font-family: monospace;
+  background-color: darkgrey;
+  text-shadow: none;
+  padding: 4px 7px;
+}
+
+.code-header a {
+  color: #555;
+}
+
+#code-pane code {
+  max-height:500px;
+  min-height:500px;
+  overflow-y:scroll;
+  overflow:scroll;
+}
+
+.right-pane, .left-pane {
+  width:400px;
+  height:400px;
+  background-color:#e1e1e1;
+  background-color:rgba(0,0,0,.05);
+  display:inline-block;
+  vertical-align: top;
+  padding:30px;
+  margin-bottom:25px;
+  float:left;
+}
+
+.left-pane {
+  margin-right:25px;
+}
+
+.bottom-pane {
+  width: 885px;
+  background-color:#e1e1e1;
+  background-color:rgba(0,0,0,.05);
+  display:inline-block;
+  vertical-align: top;
+  padding:30px;
+  position:relative;
+  margin-bottom:10px;
+}
+
+.bottom-pane p {
+  display:inline-block;
+  margin:0px;
+}
+
+.code-selection {
+  display:none;
+}
+
+.code-selection.selected{
+  display:block;
+}
+
+.carousel-control.right {
+  right: 73px;
+  left: auto;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 49%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #222222;
+  border: 3px solid #ffffff;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  border-radius: 23px;
+  opacity: 0.25;
+  filter: alpha(opacity=25);
+}
+
+.carousel-control.hover {
+  opacity: 0.50;
+  filter: alpha(opacity=50);
+}
+
+.carousel-control:hover {
+  opacity: 0.50;
+  filter: alpha(opacity=50);
+}
+
+ul.tweet_list {
+  text-indent: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+ul.tweet_list li {
+  font-size: .7em;
+  width:100%;
+  display:block;
+  padding-bottom:15px;
+  margin-bottom:17px;
+  border-bottom: 1px solid @base;
+}
+
+.tweet_avatar {
+  padding-right: .5em;
+  float: left;
+}
+
+.tweet_list li span {
+  display:inline;
+}
+
+p.footer {
+  font-size:.3em;
+  text-align:center;
+  color:#777;
+}
+
+pre {
+  margin-top: 0;
+}
+
+code {
+  font-size: 10pt;
+  text-shadow:none;
+}
+
+  /* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 767px) {
+
+  div#container {
+    width:768px;
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-weight:normal;
+    font-size:1.28em;
+    margin-bottom:25px;
+  }
+
+  h2 {
+    font-size:.85em;
+    margin-bottom:15px;
+    padding-bottom:5px;
+    border-bottom-width:2px;
+  }
+
+  p {font-size:.55em;}
+
+  ul {
+    font-size:.6em;
+  }
+
+  div#container {
+    width:auto;
+    margin: 10px auto;
+  }
+
+  .right-pane, .left-pane {
+    margin: 0 10px;
+    width:auto;
+    height:auto;
+    display:block;
+    padding:20px;
+    margin-bottom:20px;
+  }
+
+  .bottom-pane {
+    margin: 0 10px;
+    width:auto;
+    display:block;
+  }
+
+}
+
+@media only screen
+and (min-width : 1px)
+and (max-width : 320px) {
+
+  div#container {
+    width:320px;
+    margin: 10px auto;
+  }
+
+  h1 {
+    margin-top:00px;
+    font-weight:normal;
+    font-size:1em;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:20px;
+    display:inline-block;
+  }
+
+  h2 {
+    font-size:.85em;
+    margin-bottom:15px;
+    padding-bottom:5px;
+    border-bottom-width:2px;
+  }
+
+  p {font-size:.55em;}
+
+  ul {
+    font-size:.6em;
+  }
+
+  div#container {
+    width: 320px;
+    margin: 10px auto;
+  }
+
+  .right-pane, .left-pane {
+    margin: 0 10px;
+    width:320px;
+    height:auto;
+    display:block;
+    padding:20px;
+    margin-bottom:15px;
+    float:none;
+  }
+
+  .bottom-pane {
+    margin: 0 10px;
+    width:auto;
+    display:block;
+  }
+
+}
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 767px) {
+
+  div#container {
+    width:768px;
+    margin: 10px auto;
+  }
+
+  h1 {
+    margin-top:00px;
+    font-weight:normal;
+    font-size:1em;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:20px;
+    display:inline-block;
+  }
+
+  h2 {
+    font-size:.85em;
+    margin-bottom:15px;
+    padding-bottom:5px;
+    border-bottom-width:2px;
+  }
+
+  p {
+    font-size:.55em;
+  }
+
+  ul {
+    font-size:.6em;
+  }
+
+  div#container {
+    width:auto;
+    margin: 10px auto;
+  }
+
+  .right-pane, .left-pane {
+    margin: 0 10px;
+    width:auto;
+    height:auto;
+    display:block;
+    padding:20px;
+    margin-bottom:15px;
+    float:none;
+  }
+
+  .bottom-pane {
+    margin: 0 10px;
+    width:auto;
+    display:block;
+  }
+
+}
+
+@media only screen
+and (min-width : 768px)
+and (max-width : 954px) {
+
+  div#container {
+    width:768px;
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-weight:normal;
+    font-size:1.28em;
+    margin-bottom:25px;
+  }
+
+  h2 {
+    font-size:.85em;
+    margin-bottom:15px;
+    padding-bottom:5px;
+    border-bottom-width:2px;
+  }
+
+  p {
+    font-size:.55em;
+  }
+
+  ul {
+    font-size:.6em;
+  }
+
+  .right-pane, .left-pane {
+    width:320px;
+    height:300px;
+    display:inline-block;
+    padding:20px;
+    margin-bottom:25px;
+  }
+
+  .left-pane {
+    margin-right:20px;
+  }
+
+  .bottom-pane {
+    width: 700px;
+    padding:20px;
+    margin-bottom:10px;
+  }
+
+  ul.tweet_list li {
+    font-size: .8em
+  }
+}

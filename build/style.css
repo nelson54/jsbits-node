@@ -1,0 +1,154 @@
+html{border-top:7px solid #018f46;background-image:url("images/subtle_freckles.png");padding-top:10px;overflow-y:scroll}html,body{font-family:georgia,garamond,serif;font-size:25pt;text-shadow:1px 1px 0 #ccc;color:#333}header{margin-left:25px;margin-right:25px}a{color:#018f46;text-decoration:none}p{font-size:.6em}div#container{width:955px;margin:10px auto}h1{font-family:"museo-slab",serif;font-weight:500;font-size:1.3em;margin-bottom:25px}h1 span.fn a{color:#018f46;text-decoration:none}h1 a{color:#333;font-weight:bold}h2{font-family:"museo-slab",serif;font-weight:500;font-size:1em;margin-top:0;padding-top:0;margin-bottom:15px;padding-bottom:5px;border-bottom:2px solid #018f46}h3{font-family:"museo-slab",serif;font-weight:500;font-size:1em;margin-top:0;padding-top:0;margin-bottom:0;padding-bottom:0;border-bottom:2px solid #018f46}ul{list-style:none;margin-left:0;padding-left:1em;text-indent:-1em;margin-top:0;font-size:.7em}ul li{margin-bottom:10px;margin-right:10px}#code-pane{padding:30px;padding-bottom:1px;margin-bottom:25px;background-color:#e1e1e1;background-color:rgba(0,0,0,0.05);clear:left;position:relative;margin-right:10px}.code-header{font-size:10pt;font-family:monospace;background-color:darkgrey;text-shadow:none;padding:4px 7px}.code-header a{color:#555}#code-pane code{max-height:500px;min-height:500px;overflow-y:scroll;overflow:scroll}.right-pane,.left-pane{width:400px;height:400px;background-color:#e1e1e1;background-color:rgba(0,0,0,0.05);display:inline-block;vertical-align:top;padding:30px;margin-bottom:25px;float:left}.left-pane{margin-right:25px}.bottom-pane{width:885px;background-color:#e1e1e1;background-color:rgba(0,0,0,0.05);display:inline-block;vertical-align:top;padding:30px;position:relative;margin-bottom:10px}.bottom-pane p{display:inline-block;margin:0}.code-selection{display:none}.code-selection.selected{display:block}.carousel-control.right{right:73px;left:auto}.carousel-control{position:absolute;top:49%;left:15px;width:40px;height:40px;margin-top:-20px;font-size:60px;font-weight:100;line-height:30px;color:#fff;text-align:center;background:#222;border:3px solid #fff;-webkit-border-radius:23px;-moz-border-radius:23px;border-radius:23px;opacity:.25;filter:alpha(opacity=25)}.carousel-control.hover{opacity:.50;filter:alpha(opacity=50)}.carousel-control:hover{opacity:.50;filter:alpha(opacity=50)}ul.tweet_list{text-indent:0;margin-left:0;padding-left:0}ul.tweet_list li{font-size:.7em;width:100%;display:block;padding-bottom:15px;margin-bottom:17px;border-bottom:1px solid #018f46}.tweet_avatar{padding-right:.5em;float:left}.tweet_list li span{display:inline}p.footer{font-size:.3em;text-align:center;color:#777}pre{margin-top:0}code{font-size:10pt;text-shadow:none}@media only screen and (min-device-width:320px) and (max-device-width:767px){div#container{width:768px;margin:10px auto}h1{font-weight:normal;font-size:1.28em;margin-bottom:25px}h2{font-size:.85em;margin-bottom:15px;padding-bottom:5px;border-bottom-width:2px}p{font-size:.55em}ul{font-size:.6em}div#container{width:auto;margin:10px auto}.right-pane,.left-pane{margin:0 10px;width:auto;height:auto;display:block;padding:20px;margin-bottom:20px}.bottom-pane{margin:0 10px;width:auto;display:block}}@media only screen and (min-width:1px) and (max-width:320px){div#container{width:320px;margin:10px auto}h1{margin-top:00px;font-weight:normal;font-size:1em;margin-left:10px;margin-right:10px;margin-bottom:20px;display:inline-block}h2{font-size:.85em;margin-bottom:15px;padding-bottom:5px;border-bottom-width:2px}p{font-size:.55em}ul{font-size:.6em}div#container{width:320px;margin:10px auto}.right-pane,.left-pane{margin:0 10px;width:320px;height:auto;display:block;padding:20px;margin-bottom:15px;float:none}.bottom-pane{margin:0 10px;width:auto;display:block}}@media only screen and (min-width:320px) and (max-width:767px){div#container{width:768px;margin:10px auto}h1{margin-top:00px;font-weight:normal;font-size:1em;margin-left:10px;margin-right:10px;margin-bottom:20px;display:inline-block}h2{font-size:.85em;margin-bottom:15px;padding-bottom:5px;border-bottom-width:2px}p{font-size:.55em}ul{font-size:.6em}div#container{width:auto;margin:10px auto}.right-pane,.left-pane{margin:0 10px;width:auto;height:auto;display:block;padding:20px;margin-bottom:15px;float:none}.bottom-pane{margin:0 10px;width:auto;display:block}}@media only screen and (min-width:768px) and (max-width:954px){div#container{width:768px;margin:10px auto}h1{font-weight:normal;font-size:1.28em;margin-bottom:25px}h2{font-size:.85em;margin-bottom:15px;padding-bottom:5px;border-bottom-width:2px}p{font-size:.55em}ul{font-size:.6em}.right-pane,.left-pane{width:320px;height:300px;display:inline-block;padding:20px;margin-bottom:25px}.left-pane{margin-right:20px}.bottom-pane{width:700px;padding:20px;margin-bottom:10px}ul.tweet_list li{font-size:.8em}}
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+pre code {
+    display: block; padding: 0.5em;
+    color: #333;
+    background: #f8f8ff
+}
+
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .javadoc {
+    color: #998;
+    font-style: italic
+}
+
+pre .keyword,
+pre .css .rule .keyword,
+pre .winutils,
+pre .javascript .title,
+pre .nginx .title,
+pre .subst,
+pre .request,
+pre .status {
+    color: #333;
+    font-weight: bold
+}
+
+pre .number,
+pre .hexcolor,
+pre .ruby .constant {
+    color: #099;
+}
+
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula {
+    color: #d14
+}
+
+pre .title,
+pre .id {
+    color: #900;
+    font-weight: bold
+}
+
+pre .javascript .title,
+pre .lisp .title,
+pre .clojure .title,
+pre .subst {
+    font-weight: normal
+}
+
+pre .class .title,
+pre .haskell .type,
+pre .vhdl .literal,
+pre .tex .command {
+    color: #458;
+    font-weight: bold
+}
+
+pre .tag,
+pre .tag .title,
+pre .rules .property,
+pre .django .tag .keyword {
+    color: #000080;
+    font-weight: normal
+}
+
+pre .attribute,
+pre .variable,
+pre .lisp .body {
+    color: #008080
+}
+
+pre .regexp {
+    color: #009926
+}
+
+pre .class {
+    color: #458;
+    font-weight: bold
+}
+
+pre .symbol,
+pre .ruby .symbol .string,
+pre .lisp .keyword,
+pre .tex .special,
+pre .prompt {
+    color: #990073
+}
+
+pre .built_in,
+pre .lisp .title,
+pre .clojure .built_in {
+    color: #0086b3
+}
+
+pre .preprocessor,
+pre .pi,
+pre .doctype,
+pre .shebang,
+pre .cdata {
+    color: #999;
+    font-weight: bold
+}
+
+pre .deletion {
+    background: #fdd
+}
+
+pre .addition {
+    background: #dfd
+}
+
+pre .diff .change {
+    background: #0086b3
+}
+
+pre .chunk {
+    color: #aaa
+}
+.tweet, .query {
+  font-family: Georgia, serif;
+  font-size: 120%;
+  color: #085258; }
+  .tweet .tweet_list, .query .tweet_list {
+    -webkit-border-radius: .5em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-color: #8ADEE2; }
+    .tweet .tweet_list .awesome, .tweet .tweet_list .epic, .query .tweet_list .awesome, .query .tweet_list .epic {
+      text-transform: uppercase; }
+    .tweet .tweet_list li, .query .tweet_list li {
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: .5em; }
+      .tweet .tweet_list li a, .query .tweet_list li a {
+        color: #0C717A; }
+    .tweet .tweet_list .tweet_even, .query .tweet_list .tweet_even {
+      background-color: #91E5E7; }
+    .tweet .tweet_list .tweet_avatar, .query .tweet_list .tweet_avatar {
+      padding-right: .5em;
+      float: left; }
+      .tweet .tweet_list .tweet_avatar img, .query .tweet_list .tweet_avatar img {
+        vertical-align: middle; }
