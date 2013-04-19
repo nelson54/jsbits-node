@@ -1,4 +1,10 @@
 module.exports = function(grunt) {
+    
+    /*var path = require('path');
+    var lrSnippet = require('grunt-contrib-livereload/lib/utils').livereloadSnippet;
+    var folderMount = function folderMount(connect, point) {
+        return connect.static(path.resolve(point));
+    };*/
 
     // Project configuration.
     grunt.initConfig({
@@ -17,7 +23,8 @@ module.exports = function(grunt) {
             options: {
               data: {
                 stylesheet: "",//grunt.file.read('build/style.css'),
-                javascript: ""//grunt.file.read('build/app.js'),
+                javascript1: "",//grunt.file.read('build/static/scriptText/StabWound.txt'),
+                javascript2: "",//grunt.file.read('build/static/scriptText/BigMoney.txt')
               }
             },
             files: {
@@ -40,7 +47,7 @@ module.exports = function(grunt) {
             basic_and_extras: {
                 files: {
                     'build/dist/style.css': ['build/temp/style.css','source/styles/hljs-github.css','source/styles/jquery.tweet.css'],
-                    'build/dist/app.js': ['source/lib/vendor/hilight.min.js', 'source/lib/vendor/jquery.tweet.js', 'source/lib/app.js']
+                    'build/dist/app.js': ['source/lib/vendor/ender.min.js', 'source/lib/vendor/hilight.min.js', 'source/lib/app.js']
                 }
             }
         },
@@ -51,15 +58,26 @@ module.exports = function(grunt) {
                 ]
             }
         },
+        /*livereload: {
+            port: 35729 // Default livereload listening port.
+        },*/
         connect: {
               server: {
                     options: {
-                          port: 9001,
-                          base: 'build/dist/',
-                          hostname: '*',
-                          keepalive:true
+                            port: 9001,
+                            base: 'build/dist/',
+                            hostname: '*'
                     }
               }
+        },
+        watch: {
+           scripts: {
+                files: ['source/**/*', 'build/static/**/*'],
+                tasks: ['less:development', 'concat', 'jade'],
+                options: {
+                    nospawn: true
+                }
+           }
         }
     });
 
@@ -68,8 +86,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jade');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    //grunt.loadNpmTasks('grunt-contrib-livereload');
 
     // Default task(s).
-    grunt.registerTask('default', ['less:development', 'concat', 'jade', 'copy', 'connect']);
+    grunt.registerTask('default', ['less:development', 'concat', 'jade', 'copy', 'connect', 'watch']);
 
 };

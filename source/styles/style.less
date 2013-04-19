@@ -1,7 +1,8 @@
-@base: #018f46;
+@green: #018f46;
+@black: #333;
 
 html {
-  border-top: 7px solid @base;
+  border-top: 7px solid @green;
   background-image:url("images/subtle_freckles.png");
   padding-top:10px;
   overflow-y:scroll;
@@ -11,20 +12,28 @@ html, body {
   font-family:georgia,garamond,serif;
   font-size:25pt;
   text-shadow: 1px 1px 0px #ccc;
-  color:#333;
+  color:@black;
 }
 
 header {
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 a {
-  color:@base;
+  color: @green;
   text-decoration:none;
 }
 
 p {font-size:.6em;}
+
+p.lead {
+  font-family: "museo-slab",serif;
+  margin-left:30px;
+  margin-right:30px;
+  font-size:.8em;
+  margin-top: 0;
+}
 
 div#container {
   width:955px;
@@ -35,11 +44,11 @@ h1 {
   font-family: "museo-slab",serif;
   font-weight:500;
   font-size: 1.3em;
-  margin-bottom:25px;
+  margin-bottom: 5px;
 }
 
 h1 span.fn a {
-  color:@base;
+  color: @green;
   text-decoration:none;
 }
 
@@ -48,7 +57,7 @@ h1 span.tagline {
 }
 
 h1 a {
-  color:#333;
+  color:@black;
   font-weight: bold;
 }
 
@@ -60,7 +69,7 @@ h2 {
   padding-top:0px;
   margin-bottom:15px;
   padding-bottom:5px;
-  border-bottom:2px solid @base;
+  border-bottom:2px solid @green;
 }
 
 h3 {
@@ -71,7 +80,7 @@ h3 {
   padding-top:0px;
   margin-bottom:0px;
   padding-bottom:0px;
-  border-bottom:2px solid @base;
+  border-bottom:2px solid @green;
 }
 
 ul {
@@ -83,9 +92,35 @@ ul {
   font-size:.7em;
 }
 
+ul.inline {
+  margin-right:30px;
+  display:block;
+  float: right;
+  width: 100%;
+  text-align: right;
+}
+
+ul.inline li {
+display: inline-block;
+margin-bottom: 0;
+margin-left: 20px;
+}
+
+ul li img {
+  display:block;
+}
+
+ul.inline li > * {
+  display: block;
+}
+
 ul li {
   margin-bottom:10px;
   margin-right:10px;
+}
+
+ul li a {
+  color:@black;
 }
 
 #code-pane {
@@ -97,6 +132,7 @@ ul li {
   clear:left;
   position:relative;
   margin-right: 10px;
+  padding-top: 20px;
 }
 
 .code-header {
@@ -116,6 +152,7 @@ ul li {
   min-height:500px;
   overflow-y:scroll;
   overflow:scroll;
+  border: 1px solid darkgray;
 }
 
 .right-pane, .left-pane {
@@ -184,6 +221,10 @@ ul li {
   filter: alpha(opacity=25);
 }
 
+ul.tweet_list li a {
+  color:@green;
+}
+
 .carousel-control.hover {
   opacity: 0.50;
   filter: alpha(opacity=50);
@@ -206,7 +247,7 @@ ul.tweet_list li {
   display:block;
   padding-bottom:15px;
   margin-bottom:17px;
-  border-bottom: 1px solid @base;
+  border-bottom: 1px solid @green;
 }
 
 .tweet_avatar {
