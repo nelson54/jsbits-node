@@ -46,7 +46,7 @@ module.exports = function(grunt) {
         concat: {
             basic_and_extras: {
                 files: {
-                    'build/dist/style.css': ['build/temp/style.css','source/styles/hljs-github.css','source/styles/jquery.tweet.css'],
+                    'build/dist/style.css': ['build/temp/style.css'],
                     'build/dist/app.js': ['source/lib/vendor/ender.min.js', 'source/lib/vendor/hilight.min.js', 'source/lib/app.js']
                 }
             }
